@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #FF4500;
+	color: #FFFFFF;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 0%;
+	bottom: -5px;
+	left: 0;
+	background-color: #FFFFFF;
+	transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+	color: #FFC0CB;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+section#main-content {
+	padding: 20px;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+article {
+	margin-bottom: 20px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	padding: 10px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+article:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+article header h2 a {
+	color: #000000;
+	text-decoration: none;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+article header h2 a::before {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 0%;
+	bottom: -5px;
+	left: 0;
+	background-color: #FF4500;
+	transition: all 0.2s ease
+}
+footer {
+	background-color: #EEEEEE;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+}
